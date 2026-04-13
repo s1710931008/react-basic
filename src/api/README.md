@@ -53,12 +53,3 @@ npm run dev
 
 
 ---
-
-如果你要再更「作品級 README」（像 GitHub 展示那種🔥），我可以幫你加：
-
-- 📸 Demo 截圖區
-- 🔗 Live Demo
-- 🧱 技術架構圖
-- 📦 API 測試（Postman）
-
-直接說 👉「升級 README」我幫你做到可以拿去面試用 😎
