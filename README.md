@@ -43,10 +43,11 @@ src/
 
 
 ## GitHub 
+---
 * git branch -M main
 * git remote add origin git@github.com:s1710931008/react-basic.git
 * git push -u origin main
-
+---
 
 
 ---
