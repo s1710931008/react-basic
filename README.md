@@ -20,6 +20,8 @@
 src/
   api/                # API 請求
     contact.js
+    server.js         # SQLite API
+    todo.db           # SQLite 資料庫
 
   components/         # 共用元件
     Nav.jsx
@@ -38,6 +40,14 @@ src/
   App.jsx
   main.jsx
 ```
+
+
+## GitHub 
+* git branch -M main
+* git remote add origin git@github.com:s1710931008/react-basic.git
+* git push -u origin main
+
+
 
 ---
 
