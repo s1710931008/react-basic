@@ -1,3 +1,138 @@
+# 📦 React Project
+
+一個使用 React 建立的前端專案，包含基本頁面、表單送出（Contact）、API 串接與路由管理。
+
+---
+
+## 🚀 專案特色
+
+* 🔹 React + Hooks（useState）
+* 🔹 React Router 路由管理
+* 🔹 表單送出（Contact Form）
+* 🔹 API 串接（axios / fetch）
+* 🔹 模組化資料夾結構（pages / components / api / routes）
+
+---
+
+## 📁 專案結構
+
+```
+src/
+  api/                # API 請求
+    contact.js
+
+  components/         # 共用元件
+    Nav.jsx
+    Footer.jsx
+
+  pages/              # 頁面
+    About/
+      About.jsx
+    ContactSend/
+      ContactSend.jsx
+      ContactSend.css
+
+  routes/             # 路由設定
+    index.jsx
+
+  App.jsx
+  main.jsx
+```
+
+---
+
+## 🧭 路由說明
+
+| 路徑              | 頁面   |
+| --------------- | ---- |
+| `/`             | 首頁   |
+| `/about`        | 關於我們 |
+| `/contact/send` | 聯絡表單 |
+
+---
+
+## 🛠️ 安裝與啟動
+
+### 1️⃣ 安裝套件
+
+```bash
+npm install
+```
+
+### 2️⃣ 啟動開發環境
+
+```bash
+npm run dev
+```
+
+---
+
+## 🔌 API 使用
+
+範例（`src/api/contact.js`）：
+
+```js
+import axios from 'axios'
+
+export const postA2 = (data) => {
+    return axios.post('/api/contact', data)
+}
+```
+
+---
+
+## 🧾 Contact 表單功能
+
+* ✔ 姓名輸入
+* ✔ 電話驗證（台灣手機 09 開頭）
+* ✔ 訊息填寫
+* ✔ 表單送出 API
+* ✔ 成功/失敗提示
+
+---
+
+## 📐 開發規範
+
+### 命名規則
+
+| 類型  | 命名                          |
+| --- | --------------------------- |
+| 元件  | PascalCase（Nav.jsx）         |
+| 頁面  | PascalCase（ContactSend.jsx） |
+| API | 小寫（contact.js）              |
+
+---
+
+### 資料夾規則
+
+* `pages/` → 放頁面
+* `components/` → 放共用元件
+* `api/` → 放 API 請求
+* `routes/` → 路由設定
+
+---
+
+## 🔥 未來可擴充
+
+* 🔸 Login / Auth 驗證
+* 🔸 Protected Route（權限控管）
+* 🔸 Dashboard / 後台
+* 🔸 狀態管理（Redux / Zustand）
+* 🔸 UI Framework（MUI / Tailwind）
+
+---
+
+## 👨‍💻 Author
+
+* Your Name
+
+---
+
+## 📄 License
+
+MIT License
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

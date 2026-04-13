@@ -1,0 +1,190 @@
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap');
+
+  :root {
+      --nav-bg: #ffffff;
+      --nav-border: #e8e8e8;
+      --nav-accent: #2563eb;
+      --nav-accent-bg: #eff6ff;
+      --nav-text: #6b7280;
+      --nav-text-active: #111827;
+      --nav-hover-bg: #f9fafb;
+      --nav-group-title: #9ca3af;
+      --nav-width: 224px;
+  }
+
+  /* ── WEB NAV ── */
+  .web-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: var(--nav-width);
+      height: 100vh;
+      background: var(--nav-bg);
+      border-right: 1px solid var(--nav-border);
+      display: flex;
+      flex-direction: column;
+      padding: 28px 0;
+      font-family: 'DM Sans', sans-serif;
+      z-index: 100;
+      overflow-y: auto;
+  }
+
+  .web-nav-logo {
+      padding: 0 20px 24px;
+      border-bottom: 1px solid var(--nav-border);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .web-nav-logo-mark {
+      width: 30px;
+      height: 30px;
+      background: var(--nav-accent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+  }
+
+  .web-nav-logo-mark svg {
+      width: 14px;
+      height: 14px;
+  }
+
+  .web-nav-logo-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--nav-text-active);
+      letter-spacing: -0.01em;
+  }
+
+  .web-nav-group {
+      padding: 16px 0 4px;
+  }
+
+  .group-title {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--nav-group-title);
+      padding: 0 20px 6px;
+  }
+
+  .group-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      padding: 0 10px;
+  }
+
+  .web-nav a {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 10px;
+      font-size: 13.5px;
+      font-weight: 400;
+      color: var(--nav-text);
+      text-decoration: none;
+      transition: color 0.12s, background 0.12s;
+      border-radius: 7px;
+  }
+
+  .web-nav a:hover {
+      color: var(--nav-text-active);
+      background: var(--nav-hover-bg);
+  }
+
+  .web-nav a.active {
+      color: var(--nav-accent);
+      background: var(--nav-accent-bg);
+      font-weight: 500;
+  }
+
+  .web-nav-icon {
+      width: 15px;
+      height: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      opacity: 0.6;
+      transition: opacity 0.12s;
+  }
+
+  .web-nav a.active .web-nav-icon,
+  .web-nav a:hover .web-nav-icon {
+      opacity: 1;
+  }
+
+  .web-nav-divider {
+      height: 1px;
+      background: var(--nav-border);
+      margin: 6px 20px;
+  }
+
+  /* ── MOBILE NAV ── */
+  .mobile-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(20px) saturate(160%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%);
+      border-top: 1px solid var(--nav-border);
+      display: flex;
+      align-items: stretch;
+      padding: 0 4px;
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+      font-family: 'DM Sans', sans-serif;
+      z-index: 100;
+      height: calc(62px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .mobile-nav a {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      text-decoration: none;
+      color: var(--nav-text);
+      padding: 8px 4px;
+      transition: color 0.12s;
+  }
+
+  .mobile-nav a.active {
+      color: var(--nav-accent);
+  }
+
+  .mobile-icon-wrap {
+      width: 36px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      transition: background 0.15s;
+  }
+
+  .mobile-nav a.active .mobile-icon-wrap {
+      background: var(--nav-accent-bg);
+  }
+
+  .mobile-icon {
+      font-size: 17px;
+      line-height: 1;
+  }
+
+  .mobile-label {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+  }
