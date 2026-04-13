@@ -10,6 +10,7 @@ const NAV_ICONS = {
   '/sendmsg': <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h12v8H8.5L5 14v-3H2V3z" /></svg>,
   '/database': <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"><ellipse cx="8" cy="4.5" rx="5" ry="2" /><path d="M3 4.5v3c0 1.1 2.24 2 5 2s5-.9 5-2v-3" /><path d="M3 7.5v3c0 1.1 2.24 2 5 2s5-.9 5-2v-3" /></svg>,
   '/chart': <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12l3.5-4 3 2.5L12 5" /><path d="M2 14h12" /></svg>,
+  '/mygrid': <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12l3.5-4 3 2.5L12 5" /><path d="M2 14h12" /></svg>,
 }
 
 function useDevice() {
@@ -43,6 +44,7 @@ export default function Nav() {
         { to: '/sendmsg', label: 'Send Message' },
         { to: '/database', label: 'Database' },
         { to: '/chart', label: 'Chart' },
+        { to: '/mygrid', label: 'MyGrid' },
       ]
     }
   ]
@@ -53,6 +55,7 @@ export default function Nav() {
     { to: '/contact', label: '聯絡', icon: '📞' },
     { to: '/database', label: '資料', icon: '🗄️' },
     { to: '/chart', label: '圖表', icon: '📊' },
+    { to: '/mygrid', label: 'MyGrid', icon: '🗄️' },
   ]
 
   const isActive = (to) =>

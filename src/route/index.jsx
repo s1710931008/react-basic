@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 import ContactSend from '../pages/ContactSend/ContactSend'
 import ContactDetail from '../pages/ContactDetail/ContactDetail'
 import ChartPage from '../pages/Chart/Chart'
+import MyGrid from '../pages/MyGrid/MyGrid'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/database" element={<Database />} />
                 <Route path="/database/:id" element={<Database />} />
                 <Route path="/chart" element={<ChartPage />} />
+                <Route path="/mygrid" element={<MyGrid />} />
             </Routes>
             <Footer />
         </BrowserRouter>
