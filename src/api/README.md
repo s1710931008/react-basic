@@ -37,7 +37,7 @@ src/
 
 ## 🛠️ 安裝與啟動
 ---
-* 套件 
+* 🔹套件 
 ```bash
 npm install express sqlite3 cors
 ```
